@@ -1,0 +1,135 @@
+@media only screen and (min-width: 600px) and (max-width: 900px)
+{
+.navBar
+{
+    display: none;
+}
+.navBarPhone
+{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: auto;
+  width: 100vw;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0 0 20px 0 #0000005a;
+}
+.navBarPhone .left
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 55%;
+    height: 100%;
+}
+.navBarPhone .left .logo
+{
+    position: relative;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.navBarPhone .left .logo img
+{
+    width: 100%;
+}
+.navBarPhone .left .leftLogoDiv
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+.navBarPhone .left .leftLogoDiv .logoTitle
+{
+    font-size: 30px;
+    color: #1452b5;
+    font-family: Roboto,sans-serif;
+}
+.navBarPhone .left .leftLogoDiv .logoTitleSpan
+{
+    font-size: 16px;
+    color: #505050;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+}
+.navBarPhone .right
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 45%;
+    height: 100%;
+}
+.navBarPhone .right .rightText
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: Roboto,sans-serif;
+  color: #505050;
+  padding: 0 30px;
+}
+.navBarPhone .right .rightText span
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 35px;
+    padding: 0 5px;
+}
+.navBarPhone .right .rightText span img
+{
+    position: relative;
+    height: 100%;
+}
+}
+.alertBox
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px;
+    padding: 10px;
+    background: #ffc;
+    border: 0;
+    border-radius: 10px;
+}
+.alertBox .alertIcon
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5px;
+    height: 5px;
+    font-size: 17px;
+    font-family: Roboto,sans-serif;
+    padding: 10px;
+    background: #d11f39;
+    color: aliceblue;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+.alertBox p
+{
+  color: #1452b5;
+  font-size: 15px;
+}

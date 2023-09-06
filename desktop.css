@@ -1,0 +1,249 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+body
+{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+@media only screen and (min-width: 900px)
+{
+.navBarPhone
+{
+    display: none;
+}
+.navBar
+{
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0 0 20px 0 #0000005a;
+}
+.navBar .left
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+}
+.navBar .left .logo
+{
+    position: relative;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.navBar .left .logo img
+{
+    width: 100%;
+}
+.navBar .left .leftLogoDiv
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+.navBar .left .leftLogoDiv .logoTitle
+{
+    font-size: 35px;
+    color: #1452b5;
+    font-family: Roboto,sans-serif;
+}
+.navBar .left .leftLogoDiv .logoTitleSpan
+{
+    font-size: 16px;
+    color: #505050;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+}
+.navBar .right
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    width: auto;
+}
+.navBar .right .rightText
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-style: italic;
+  font-family: Roboto,sans-serif;
+  color: #1452b5;
+}
+.navBar .right .rightText span
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 35px;
+    padding: 0 5px;
+}
+.navBar .right .rightText span img
+{
+    position: relative;
+    height: 100%;
+}
+.options_banner
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 1400px;
+}
+.options_banner .banner_image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.options_banner .banner_image img
+{
+    width: 100%;
+}
+.option_container
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    bottom: -100px;
+    background: #ffffff;
+    box-shadow: 0 5px 30px 0 #00000073;
+    border-radius: 20px;
+}
+.option_container .option_box
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 15px;
+    padding: 0px;
+    background: #fff;
+    border-radius: 20px;  
+    transition: 0.3s;
+    cursor: pointer;
+}
+.option_container .option_box:hover
+{
+    background: #e2e2e2;
+    transform: scale(1.05);
+
+}
+.option_container .option_box p
+{
+    text-align: center;
+    font-size: 18px;
+    color: #505050;
+    font-family: Roboto,sans-serif;
+    margin: 0;
+}
+.option_container .option_box .option_text
+{
+    position: sticky;
+    margin: 10px 5px;
+    width: 100px;
+}
+.timing_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    width: 100%;
+    max-width: 1400px;
+}
+.timing_section .timing
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    border: 3px solid red;
+}
+.timing_section .timing .opening_hour_title
+{
+  font-family: Roboto,sans-serif;
+  color: #505050;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timing_section .rating
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 25%;
+}
+.timing_section .options
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 25%;
+}
+
+}
