@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#1452b5}.prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Group_534" data-name="Group 534" transform="translate(-773.999 -1286)">
+        <path id="prefix__Path_479" d="M161.72 180.14a62.438 62.438 0 0 1-59.22 62.414c-1.087.057-2.184.086-3.284.086a62.5 62.5 0 1 1 62.5-62.5z" class="prefix__cls-1" data-name="Path 479" transform="translate(737.279 1168.36)"/>
+        <g id="prefix__Group_222" data-name="Group 222" transform="translate(938.689 1523.615)">
+            <g id="prefix__Group_221" data-name="Group 221" transform="translate(-117.374 -193.859)">
+                <path id="prefix__Path_483" d="M114.226 0H68.218a1.438 1.438 0 0 0-1.438 1.438V64.7a1.438 1.438 0 0 0 1.438 1.438h46.009a1.438 1.438 0 0 0 1.438-1.438V1.438A1.438 1.438 0 0 0 114.226 0z" class="prefix__cls-2" data-name="Path 483" transform="translate(-66.78)"/>
+                <g id="prefix__Group_220" data-name="Group 220" transform="translate(5.751 8.627)">
+                    <path id="prefix__Path_484" d="M112.743 69.658H130a1.438 1.438 0 1 0 0-2.875h-17.257a1.438 1.438 0 1 0 0 2.875z" class="prefix__cls-1" data-name="Path 484" transform="translate(-111.305 -66.783)"/>
+                    <path id="prefix__Path_485" d="M290.83 136.441h11.5a1.438 1.438 0 0 0 0-2.875h-11.5a1.438 1.438 0 0 0 0 2.875z" class="prefix__cls-1" data-name="Path 485" transform="translate(-266.388 -124.939)"/>
+                    <path id="prefix__Path_486" d="M112.743 136.441H130a1.438 1.438 0 1 0 0-2.875h-17.257a1.438 1.438 0 1 0 0 2.875z" class="prefix__cls-1" data-name="Path 486" transform="translate(-111.305 -124.939)"/>
+                    <path id="prefix__Path_487" d="M112.743 203.224h34.506a1.438 1.438 0 0 0 0-2.875h-34.506a1.438 1.438 0 1 0 0 2.875z" class="prefix__cls-1" data-name="Path 487" transform="translate(-111.305 -183.096)"/>
+                    <path id="prefix__Path_488" d="M312.67 267.13h-9.97a1.438 1.438 0 0 0 0 2.875h9.968a1.438 1.438 0 1 0 0-2.875z" class="prefix__cls-1" data-name="Path 488" transform="translate(-276.727 -241.251)"/>
+                    <path id="prefix__Path_489" d="M269.765 267.775a1.362 1.362 0 0 0-.178-.219 1.381 1.381 0 0 0-.219-.178 1.424 1.424 0 0 0-.249-.132 1.339 1.339 0 0 0-.269-.082 1.414 1.414 0 0 0-.561 0 1.338 1.338 0 0 0-.269.082 1.421 1.421 0 0 0-.249.132 1.392 1.392 0 0 0-.4.4 1.454 1.454 0 0 0-.214.517 1.378 1.378 0 0 0 0 .561 1.458 1.458 0 0 0 .214.517 1.381 1.381 0 0 0 .178.219 1.361 1.361 0 0 0 .219.178 1.416 1.416 0 0 0 .249.132 1.351 1.351 0 0 0 .269.082 1.378 1.378 0 0 0 .561 0 1.349 1.349 0 0 0 .269-.082 1.413 1.413 0 0 0 .249-.132 1.372 1.372 0 0 0 .219-.178 1.358 1.358 0 0 0 .178-.219 1.416 1.416 0 0 0 .132-.249 1.461 1.461 0 0 0 .083-.269 1.413 1.413 0 0 0 .027-.28 1.459 1.459 0 0 0-.243-.8z" class="prefix__cls-1" data-name="Path 489" transform="translate(-247.004 -241.256)"/>
+                    <path id="prefix__Path_490" d="M112.743 270.006h15.863a1.438 1.438 0 1 0 0-2.875h-15.863a1.438 1.438 0 1 0 0 2.875z" class="prefix__cls-1" data-name="Path 490" transform="translate(-111.305 -241.252)"/>
+                    <path id="prefix__Path_491" d="M112.743 336.789h34.506a1.438 1.438 0 0 0 0-2.875h-34.506a1.438 1.438 0 0 0 0 2.875z" class="prefix__cls-1" data-name="Path 491" transform="translate(-111.305 -299.408)"/>
+                    <path id="prefix__Path_492" d="M112.743 403.572h34.506a1.438 1.438 0 0 0 0-2.875h-34.506a1.438 1.438 0 1 0 0 2.875z" class="prefix__cls-1" data-name="Path 492" transform="translate(-111.305 -357.565)"/>
+                </g>
+            </g>
+            <path id="prefix__Path_493" d="M-80.792-193.859h-5.974l-24.855-23.825-27.918 26.759h5.184a2.068 2.068 0 0 1 2.067 2.067v26.179a2.068 2.068 0 0 0 2.067 2.067h12.849v4.134h-12.849a6.207 6.207 0 0 1-6.2-6.2v-24.113h-4.822a3.449 3.449 0 0 1-3.445-3.444 3.5 3.5 0 0 1 1.019-2.453l30.618-29.352a2.066 2.066 0 0 1 2.861 0z" class="prefix__cls-2" data-name="Path 493"/>
+        </g>
+    </g>
+</svg>

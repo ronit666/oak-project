@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Icon" transform="translate(-278 -1285.867)">
+        <path id="prefix__Path_477" fill="#1452b5" d="M161.72 180.14a62.438 62.438 0 0 1-59.22 62.414c-1.087.057-2.184.086-3.284.086a62.5 62.5 0 1 1 62.5-62.5z" data-name="Path 477" transform="translate(241.28 1168.227)"/>
+        <g id="prefix__Group_225" data-name="Group 225" transform="translate(-1167.02 1537.135)">
+            <path id="prefix__Rectangle_110" d="M0 0H15.7V4.052H0z" class="prefix__cls-2" data-name="Rectangle 110" transform="translate(1525.976 -224.134)"/>
+            <path id="prefix__Rectangle_111" d="M0 0H9.116V4.052H0z" class="prefix__cls-2" data-name="Rectangle 111" transform="translate(1525.976 -215.303)"/>
+            <path id="prefix__Rectangle_112" d="M0 0H15.7V4.052H0z" class="prefix__cls-2" data-name="Rectangle 112" transform="translate(1525.976 -206.473)"/>
+            <path id="prefix__Rectangle_113" d="M0 0H9.116V4.052H0z" class="prefix__cls-2" data-name="Rectangle 113" transform="translate(1525.976 -197.64)"/>
+            <path id="prefix__Rectangle_114" d="M0 0H15.7V4.052H0z" class="prefix__cls-2" data-name="Rectangle 114" transform="translate(1525.976 -188.81)"/>
+            <path id="prefix__Path_497" d="M1564.991-56.856l-.752-.2v-45.034h-5.233v45.033l-.751.2a13.083 13.083 0 0 0-9.715 12.627 13.1 13.1 0 0 0 13.083 13.082 13.1 13.1 0 0 0 13.084-13.082 13.084 13.084 0 0 0-9.716-12.626zm-4.693 7.032a5.622 5.622 0 0 0-4.349 5.45 2.617 2.617 0 0 1-2.614 2.613 2.617 2.617 0 0 1-2.613-2.613 10.757 10.757 0 0 1 8.423-10.549 2.618 2.618 0 0 1 3.125 1.974 2.625 2.625 0 0 1-1.97 3.124z" class="prefix__cls-2" data-name="Path 497" transform="translate(-53.71 -117.443)"/>
+            <path id="prefix__Path_498" d="M1507.913-140.78a20.916 20.916 0 0 1-20.893-20.892 20.9 20.9 0 0 1 2.76-10.395 20.939 20.939 0 0 1 7.369-7.5v-46.283a10.775 10.775 0 0 1 10.764-10.763 10.775 10.775 0 0 1 10.763 10.763v46.283a20.918 20.918 0 0 1 7.369 7.5 20.9 20.9 0 0 1 2.76 10.4 20.915 20.915 0 0 1-20.892 20.887zm0-91.015a5.957 5.957 0 0 0-5.95 5.95v49.176l-1.316.67a16.01 16.01 0 0 0-8.813 14.328 16.1 16.1 0 0 0 16.079 16.078 16.1 16.1 0 0 0 16.078-16.078 16 16 0 0 0-8.813-14.329l-1.317-.67v-49.176a5.956 5.956 0 0 0-5.948-5.949z" class="prefix__cls-2" data-name="Path 498"/>
+        </g>
+    </g>
+</svg>
