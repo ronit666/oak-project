@@ -8,15 +8,33 @@ body
 {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   min-width: 100vw;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
   overflow-x: hidden;
   font-family: Roboto,sans-serif;
+}
+body::-webkit-scrollbar 
+{
+   display: none;
+}
+.main
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;   
+    margin: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    padding: 0;
 }
 @media only screen and (min-width: 900px)
 {
@@ -28,6 +46,7 @@ body
 {
   position: sticky;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,6 +135,16 @@ body
 {
     position: relative;
     height: 100%;
+}
+.center_container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;   
 }
 .options_banner
 {
@@ -536,7 +565,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 55%;
     padding: 10px 30px;
     margin: 50px;
     background: #fff;
@@ -545,5 +574,118 @@ body
 .register_section .image_section .image img
 {
     width: 100%;
+}
+.register_section .main_section .heading
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 30px;
+    color: #fff;
+    flex-direction: column;
+}
+.register_section .main_section .heading .hr-grey
+{
+    height: 1px;
+    width: 90%;
+    background: #ffffff46;
+    border: 0;
+    margin: 20px 0;
+}
+.register_section .main_section ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.register_section .main_section ul li
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin: 20px 0;
+    list-style: none;
+}
+.register_section .main_section ul li .title
+{
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0;
+}
+.register_section .main_section ul li .btn_container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+}
+.register_section .main_section ul li button
+{
+    padding: 10px 60px;
+    background-color: #1fbfd1;
+    color: #000;
+    border: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.register_section .main_section ul li .btn_container.dark_blue button 
+{
+    background-color: #1452b5;
+}
+.news_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+.news_section .heading
+{
+    font-size: 30px;
+    color: #1452b5;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.news_section .hr-grey
+{
+    position: relative;
+    background: #00000058;
+    border: 0;
+    width: 50%;
+    height: 1px;
+    margin: 20px 0;
+}
+.part_container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;   
+}
+.part_container .part1
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;  
+    border: 3px solid red; 
 }
 }
