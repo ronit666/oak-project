@@ -673,7 +673,6 @@ body::-webkit-scrollbar
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid red;
     width: 100%;
     max-width: 1300px;
     height: auto;   
@@ -686,6 +685,5 @@ body::-webkit-scrollbar
     align-items: center;
     height: auto;
     width: 50%;  
-    border: 3px solid red; 
 }
 }
