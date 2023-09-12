@@ -907,6 +907,7 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin: 30px 0;
 }
 .testimonials .testimonial
 {
@@ -916,7 +917,7 @@ body::-webkit-scrollbar
     align-items: start;
     width: 100%;
     margin: 30px 0;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 .testimonials .testimonial .image
 {
@@ -947,20 +948,38 @@ body::-webkit-scrollbar
     font-weight: 400;
     color: #505050;
     width: 100%;
-    height: auto;
-    max-height: 100px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
-button
+.testimonials .testimonial.odd .text_area .para 
+{
+    text-align: right;
+}
+.testimonials .testimonial .text_area .para button
 {
     color: #1452b5;
     font-size: 18px;
     font-weight: 400;
     background: #00000000;
     border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.testimonials .testimonial .text_area .date
+{
+    color: #505050;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Roboto,sans-serif;
+    margin-top: 20px;
+    width: 100%;
+}
+.testimonials .testimonial.odd .text_area .date
+{
+    text-align: right;
+}
+.testimonials .hr_section .hr-grey
+{
+    border: 0;
+    height: 1px;
+    width: 30%;
 }
 }
