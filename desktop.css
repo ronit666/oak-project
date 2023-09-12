@@ -982,4 +982,89 @@ body::-webkit-scrollbar
     height: 1px;
     width: 30%;
 }
+.feedback_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.feedback_section .sections
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 3px solid red;
+}
+.feedback_section .sections .container_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: 3px solid red;   
+}
+.feedback_section .sections .section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 3px solid red;   
+}
+.feedback_section .sections .section.ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid rgb(0, 76, 255);   
+}
+.feedback_section .sections .section.ul .ul.colume
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 3px solid rgb(0, 76, 255);   
+}
+.feedback_section .sections .section.ul .ul.row
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    border: 3px solid rgb(255, 0, 38);   
+}
+.feedback_section .sections .section.ul .ul.row li
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+    border: 3px solid rgb(255, 0, 255);   
+}
+.feedback_section .sections .chart_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 3px solid red;   
+}
+
 }
