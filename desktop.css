@@ -990,6 +990,7 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding: 50px 0;
 }
 .feedback_section .sections
 {
@@ -998,7 +999,15 @@ body::-webkit-scrollbar
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 3px solid red;
+    max-width: 1300px;
+}
+.feedback_section .sections .chart_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 .feedback_section .sections .container_section
 {
@@ -1008,7 +1017,6 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 50%;
-    border: 3px solid red;   
 }
 .feedback_section .sections .section
 {
@@ -1017,7 +1025,36 @@ body::-webkit-scrollbar
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 3px solid red;   
+}
+.feedback_section .sections .section.image
+{
+    position: relative;
+    width: 100%;
+}
+.feedback_section .sections .section.image .image
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.feedback_section .sections .section.title
+{
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+.feedback_section .sections .section.title .title
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 20px;
+    font-weight: 300;
+    color: #1452b5;
 }
 .feedback_section .sections .section.ul
 {
@@ -1027,7 +1064,6 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
-    border: 3px solid rgb(0, 76, 255);   
 }
 .feedback_section .sections .section.ul .ul.colume
 {
@@ -1037,7 +1073,15 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
-    border: 3px solid rgb(0, 76, 255);   
+}
+.feedback_section .sections .section.ul .li.colume
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
 }
 .feedback_section .sections .section.ul .ul.row
 {
@@ -1047,24 +1091,252 @@ body::-webkit-scrollbar
     align-items: start;
     flex-direction: row;
     width: 100%;
-    border: 3px solid rgb(255, 0, 38);   
 }
 .feedback_section .sections .section.ul .ul.row li
 {
+    position: relative;
     display: flex;
     justify-content: start;
-    align-items: start;
+    align-items: center;
     width: 50%;
-    border: 3px solid rgb(255, 0, 255);   
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
 }
-.feedback_section .sections .chart_section
+.feedback_section .sections .section.ul .ul.row li::after
+{
+    content: '';
+    position: absolute;
+    left: -30px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #1452b5;
+}
+.feedback_section .sections .section.ul .date
+{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    color: #505050;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.feedback_section .images
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px 0;
+}
+.feedback_section .images .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+.feedback_section .images .image img
+{
+    width: 100%;
+}
+.participation_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 50px 0;
+}
+.participation_section .section_container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px 0;
+}
+.participation_section .section_container .image_contain
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 10px;
+}
+.participation_section .section_container .image_contain .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.participation_section .section_container .image_contain .image img
+{
+    width: 100%;
+}
+.participation_section .section_container .text_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 10px;
+    color: #505050;
+    font-size: 18px;
+    font-weight: 400;
+}
+.participation_section .section_container .text_section p
+{
+    margin: 10px 0;
+}
+.participation_section .section_container .text_section p button
+{
+    color: #007bff;
+    font-size: 18px;
+    font-weight: 400;
+    background: #00000000;
+    border: 0;
+    cursor: pointer;
+}
+.self-help_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f6f6f6;
+    width: 100%;
+}
+.self-help_section .resources
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+}
+.self-help_section .resources .resource
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    margin: 20px;
+}
+.self-help_section .resources .resource .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.self-help_section .resources .resource .images img
+{
+    width: 100%;
+}
+.self-help_section .resources .resource .heading
+{
+    font-size: 20px;
+    font-weight: 400;
+    color: #1452b5;
+}
+.self-help_section .resources .resource .para
+{
+    font-size: 15px;
+    color: #505050;
+}
+.add_download_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1452b5;
+    width: 100%;
+}
+.add_download_section .parts
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+}
+.add_download_section .parts .part
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    margin: 20px 0;
+}
+.add_download_section .parts .part.i1
+{
+    width: 20%;
+}
+.add_download_section .parts .part.i2
+{
+    width: 50%;
+}
+.add_download_section .parts .part.i3
+{
+    width: 30%;
+}
+.add_download_section .parts .part.i1 .image
 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    border: 3px solid red;   
+}
+.add_download_section .parts .part.i1 .image img
+{
+    width: 100%;
+}
+.add_download_section .parts .part.i2 .para p
+{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;   
+}
+.add_download_section .parts .part.i2 .para .bold
+{
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
 }
 
 }
