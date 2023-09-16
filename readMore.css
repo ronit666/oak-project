@@ -1,0 +1,41 @@
+.m-more-less-content span {
+  display: inline;
+}
+.m-more-less-content .m-show-more, .m-more-less-content .m-show-less {
+  color: blue;
+  cursor: pointer;
+  font-style: italic;
+}
+.m-more-less-content .m-show-more:before {
+  content: " ... more";
+}
+.odd.m-more-less-content .m-show-more:before {
+  content: " ... more";
+  width: 100%;
+  text-align: right;
+}
+.m-more-less-content .m-more-text {
+  overflow: hidden;
+  display: none;
+}
+.m-more-less-content .m-show-less {
+  display: none;
+}
+.m-more-less-content .m-show-less:before {
+  content: " less";
+}
+.odd.m-more-less-content .m-show-less:before {
+  content: " less";
+  width: 100%;
+  text-align: right;
+}
+
+.m-more-less-content.m-display-more .m-show-more {
+  display: none;
+}
+.m-more-less-content.m-display-more .m-more-text {
+  display: inline;
+}
+.m-more-less-content.m-display-more .m-show-less {
+  display: inline;
+}/*# sourceMappingURL=readMore.css.map */

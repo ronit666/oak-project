@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="tablet.css">
     <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="readMore.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </head>
 <body>
-<div class="main">
+<div class="main" id="main">
+<button class="scrollToTop"><a href="#main"><img src="images/Untitled.png"></a></button>
 <nav class="navBar">
     <div class="left">
         <div class="logo"><img src="images/logo.svg" alt=""></div>
@@ -156,30 +162,30 @@
     </div>
 </div>
 <div class="sub_nav">
-    <div class="option">Coronavirus help</div>
+    <div class="option"><a href="#coronavirusHelp">Coronavirus help</a></div>
     <div class="divid"></div>
 
-    <div class="option">Register</div>
+    <div class="option"><a href="#register">Register</a></div>
     <div class="divid"></div>
 
-    <div class="option">News</div>
+    <div class="option"><a href="#News">News</a></div>
     <div class="divid"></div>
 
-    <div class="option">Services</div>
+    <div class="option"><a href="#Services">Services</a></div>
     <div class="divid"></div>
 
-    <div class="option">Team</div>
+    <div class="option"><a href="#Team">Team</a></div>
     <div class="divid"></div>
 
-    <div class="option">Testimonials</div>
+    <div class="option"><a href="#Testimonials">Testimonials</a></div>
     <div class="divid"></div>
 
-    <div class="option">PPG</div>
+    <div class="option"><a href="#PPG">PPG</a></div>
     <div class="divid"></div>
 
-    <div class="option">Self-help</div>
+    <div class="option"><a href="#Self-help">Self-help</a></div>
 </div>
-<div class="help_center">
+<div class="help_center" id="coronavirusHelp">
     <div class="heading">
         <p>Coronavirus help centre</p>
     </div>
@@ -223,20 +229,23 @@
         </div> 
     </div>
     <div class="viewMore">
-        View more
+        View more >>
     </div>
 </div>
-<div class="register_section">
+<div class="register_section" id="register">
+    <div class="heading">
+        <p>Registering with us</p>
+    </div>
+    <div class="hr_section">
+        <hr class="hr-grey">
+    </div>
+    <div class="sections">
     <div class="image_section">
         <div class="image">
             <img src="images/registration_form.png">
         </div>
     </div>
     <div class="main_section">
-        <div class="heading">
-            <p>Registering with us</p>
-            <hr class="hr-grey">
-        </div>
         <ul>
             <li class="options">
                 <p class="title">
@@ -246,7 +255,7 @@
             </li>
             <li class="options">
                 <p class="title">
-                    Email form back along with photo ID & proof of address Registration FAQs
+                    Email form back along with photo ID & proof of address <a href="#">Registration FAQs</a>
                 </p>
                 <div class="btn_container">
                 <button>Register - Adult (16+)</button>
@@ -264,12 +273,15 @@
             </li>         
         </ul>
     </div>
+    </div>
 </div>
-<div class="news_section">
+<div class="news_section" id="News">
     <div class="heading">
         <p>Practice news</p>
     </div>
-    <hr class="hr-grey">
+    <div class="hr_section">
+        <hr class="hr-grey">
+    </div>
     <div class="part_container">
         <div class="part1">
             <div class="image">
@@ -298,7 +310,7 @@
         </div>        
     </div>
 </div>
-<div class="services_section">
+<div class="services_section" id="Services">
     <h3 class="heading">
         Our services
     </h3>
@@ -306,55 +318,103 @@
         <hr class="hr-grey">
     </div>
     <div class="services_options">
-        <div class="option">
-            <div class="image">
-                <img src="images/feedback.svg">
-            </div>
-            <div class="title">
-                Smoking cessation advice
-            </div>
-        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="news-slider" class="owl-carousel">
 
-        <div class="option">
-            <div class="image">
-                <img src="images/feedback.svg">
-            </div>
-            <div class="title">
-                Smoking cessation advice
-            </div>
-        </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_549_2.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Minor operations</a>
+                      </h3>
+                    </div>
+                  </div>
+                  
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_549_3.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Ischaemic heart disease clinics</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_608.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">NHS health check</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_660.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Contraception services</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_110.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_662.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Smoking cessation advice</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/Group_656.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="post-slide">
+                    <div class="post-img">
+                      <img src="images/feedback.svg">
+                    </div>
+                    <div class="post-content">
+                      <h3 class="post-title">
+                        <a href="#">Lorem ipsum dolor sit amet.</a>
+                      </h3>
+                    </div>
+                  </div>
 
-        <div class="option">
-            <div class="image">
-                <img src="images/feedback.svg">
-            </div>
-            <div class="title">
-                Smoking cessation advice
-            </div>
-        </div>
 
-        <div class="option">
-            <div class="image">
-                <img src="images/feedback.svg">
-            </div>
-            <div class="title">
-                Smoking cessation advice
-            </div>
-        </div>
 
-        <div class="option">
-            <div class="image">
-                <img src="images/feedback.svg">
-            </div>
-            <div class="title">
-                Smoking cessation advice
-            </div>
-        </div>
 
+              </div>
+            </div>
+          </div>
+          
     </div>
 </div>
 
-<div class="team_section">
+<div class="team_section" id="Team">
     <h3 class="heading">
         Our team
     </h3>
@@ -519,7 +579,7 @@
         </div>
     </div>
 </div>
-<div class="testimonials_section">
+<div class="testimonials_section" id="Testimonials">
     <h3 class="heading">
         Testimonials from patients
     </h3>
@@ -527,17 +587,26 @@
         <hr class="hr-grey">
     </div>
     <div class="testimonials">
+
+        
+
+
+
+
+
+
         <div class="testimonial">
             <div class="image">
                 <img src="images/hospital.svg">
             </div>
-            <div class="text_area">
+            <div class="text_area m-more-less-content">
+                
                 <p class="para">
                     Excellent care & service. I have been a patient at this surgery since approximately 1981. 
                     Needless to say there have been many changes since then! However the excellent care & access to 
                     Doctors & services have remained the same though now aided & abetted by technology & a much expanded practice. 
                     I felt compelled to write a review (my first) as what I have come to expect as standard everywhere, 
-                    I find after discussions with family & friends this certainly is not always the case. I can get through 
+                    I find after discussions with family & friends this certainly is not always the case. </p><more /><p class="para">I can get through 
                     on the telephone, I can see a Doctor on the same day if I need to, a Doctor will speak with me on the telephone 
                     if necessary & with some forethought & planning by myself I can see a Doctor of my choice. My children & grandchildren have all been patients & the 
                     continuity of us generally seeing the same Doctor has for us certainly made it a family practice. The Reception staff are 
@@ -545,7 +614,6 @@
                     have taken their well earned retirement. However, it seems those who replace them are imbued with the same ethos. In the light of 
                     the NHS being as stretched as it is, I think I am extremely fortunate to have access to such a practice, as what I have been 
                     considering as standard practice is, I think, possibly unique. So thank you.
-                    <button>Read More...</button>
                 </p>
                 <em class="date">
                     - 26/07/2020
@@ -556,13 +624,13 @@
             <hr class="hr-grey">
         </div>
         <div class="testimonial odd">
-            <div class="text_area">
+            <div class="text_area  m-more-less-content">
                 <p class="para">
                     Excellent care & service. I have been a patient at this surgery since approximately 1981. 
                     Needless to say there have been many changes since then! However the excellent care & access to 
                     Doctors & services have remained the same though now aided & abetted by technology & a much expanded practice. 
                     I felt compelled to write a review (my first) as what I have come to expect as standard everywhere, 
-                    I find after discussions with family & friends this certainly is not always the case. I can get through 
+                    I find after discussions with family & friends this certainly is not always the case. </p><more /><p class="para">I can get through 
                     on the telephone, I can see a Doctor on the same day if I need to, a Doctor will speak with me on the telephone 
                     if necessary & with some forethought & planning by myself I can see a Doctor of my choice. My children & grandchildren have all been patients & the 
                     continuity of us generally seeing the same Doctor has for us certainly made it a family practice. The Reception staff are 
@@ -570,7 +638,6 @@
                     have taken their well earned retirement. However, it seems those who replace them are imbued with the same ethos. In the light of 
                     the NHS being as stretched as it is, I think I am extremely fortunate to have access to such a practice, as what I have been 
                     considering as standard practice is, I think, possibly unique. So thank you.
-                    <button>Read More...</button>
                 </p>
                 <em class="date">
                     - 26/07/2020
@@ -587,13 +654,13 @@
             <div class="image">
                 <img src="images/hospital.svg">
             </div>
-            <div class="text_area">
+            <div class="text_area m-more-less-content">
                 <p class="para">
                     Excellent care & service. I have been a patient at this surgery since approximately 1981. 
                     Needless to say there have been many changes since then! However the excellent care & access to 
                     Doctors & services have remained the same though now aided & abetted by technology & a much expanded practice. 
                     I felt compelled to write a review (my first) as what I have come to expect as standard everywhere, 
-                    I find after discussions with family & friends this certainly is not always the case. I can get through 
+                    I find after discussions with family & friends this certainly is not always the case. </p><more /><p class="para">I can get through 
                     on the telephone, I can see a Doctor on the same day if I need to, a Doctor will speak with me on the telephone 
                     if necessary & with some forethought & planning by myself I can see a Doctor of my choice. My children & grandchildren have all been patients & the 
                     continuity of us generally seeing the same Doctor has for us certainly made it a family practice. The Reception staff are 
@@ -601,7 +668,6 @@
                     have taken their well earned retirement. However, it seems those who replace them are imbued with the same ethos. In the light of 
                     the NHS being as stretched as it is, I think I am extremely fortunate to have access to such a practice, as what I have been 
                     considering as standard practice is, I think, possibly unique. So thank you.
-                    <button>Read More...</button>
                 </p>
                 <em class="date">
                     - 26/07/2020
@@ -612,7 +678,7 @@
             <hr class="hr-grey">
         </div>
         <div class="testimonial odd">
-            <div class="text_area">
+            <div class="text_area m-more-less-content">
                 <p class="para">
                     Excellent care & service. I have been a patient at this surgery since approximately 1981. 
                     Needless to say there have been many changes since then! However the excellent care & access to 
@@ -774,7 +840,7 @@
     </div>
     </div>
 </div>
-<div class="participation_section">
+<div class="participation_section" id="PPG">
     <h3 class="heading">
         Patient participation group
     </h3>
@@ -797,7 +863,7 @@
         </div>
     </div>
 </div>
-<div class="self-help_section">
+<div class="self-help_section" id="Self-help">
     <h3 class="heading">
         Self-help resources
     </h3>
@@ -914,9 +980,57 @@
                 <img src="images/Google_play.svg">
             </button>
             <button>
-                <img src="images/Google_play.svg">
+                <img src="images/App_Store.svg">
             </button>
         </div>
+    </div>
+</div>
+<div class="banner_section">
+    <div class="image">
+        <img src="images/NHS_app_add1_round_corner.jpg">
+    </div>
+    <div class="image">
+        <img src="images/NHS_app_add2_round_corner.jpg">
+    </div>
+</div>
+<div class="footer">
+    <div class="links_section">
+        <p class="address">
+            © Oakleigh Road Clinic 🏆, 280 Oakleigh Road North, Whetstone, London, N20
+        </p>
+        <div class="links">
+            <div class="link">
+                <a href="#">Accessibility statement</a>
+            </div>
+            <div class="break"></div>
+            <div class="link">
+                <a href="#">Complaints</a>
+            </div>
+            <div class="break"></div>
+            <div class="link">
+                <a href="#">GP earnings</a>
+            </div>
+            <div class="break"></div>
+            <div class="link">
+                <a href="#">Patient charter</a>
+            </div>
+            <div class="break"></div>
+            <div class="link">
+                <a href="#">Privacy notice</a>
+            </div>
+            <div class="break"></div>
+            <div class="link">
+                <a href="#">Terms and conditions </a>
+            </div>
+            <div class="break"></div>
+            <div class="link">
+                <a href="#">We Care</a>
+            </div>
+            <div class="break"></div>
+        </div>
+    </div>
+    <div class="credit">
+        <p>GP website designed by myHealthSpecialist</p>
     </div>
 </div>
 
@@ -950,7 +1064,7 @@
       }
     });
     </script>  
-  <script>
+  <!-- <script>
   $(document).ready(function() {
     var maxLength = 480; // Maximum number of letters
   
@@ -976,7 +1090,40 @@
       textContainer.html(truncatedText + "..."  + btn_var); // Display the truncated text
     }
   });
-  </script>
+
+
+  $(".testimonial .text_area").on('click','.para',function(){
+
+
+    var maxLength = 600; // Maximum number of letters
+  
+    var textContainer = $(this);
+    var text = textContainer.text().trim(); // Get the text content and remove leading/trailing whitespace
+  console.log(text);
+    if (text.length > maxLength) {
+      var words = text.split(" "); // Split the text into words
+      var truncatedText = "";
+      var currentLength = 0;
+  
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        if (currentLength + word.length + 1 <= maxLength) {
+          // Add the word and a space if it fits within the character limit
+          truncatedText += word + " ";
+          currentLength += word.length + 1; // +1 for the space
+        } else {
+          break; // Stop when the character limit is reached
+        }
+      }
+      btn_var = "<button>Read More...</button>";
+      textContainer.html(text + "..."  + btn_var); // Display the truncated text
+      console.log(text);
+    }
+
+
+
+});
+  </script> -->
 
 <script>
     $(".option.Healthcare").click(function(){
@@ -994,6 +1141,66 @@ $(".option.Administrators").click(function(){
   $(".option.Healthcare").removeClass("active");
   $(".option.Administrators").addClass("active");
 });
+</script>
+
+<script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        var scrolltop = ($($.attr(this, 'href')).offset().top) + -130;
+        $('html, body').animate({
+            scrollTop: scrolltop
+        }, 500);
+    });
+            </script>
+            <script>
+                $("#toggle_btn").click(function(){
+      $("#navbar").toggleClass("hide");
+    });
+            </script>
+            <script>
+                
+$(document).ready(function() {
+    $("#news-slider").owlCarousel({
+        items : 5,
+        itemsDesktop:[500,3],
+        itemsDesktopSmall:[980,4],
+        itemsMobile : [600,1],
+        navigation:true,
+        navigationText:["",""],
+        pagination:true,
+        autoPlay:true
+    });
+});
+</script>
+<script>
+
+$(document).ready(function(){
+  
+  $(".m-more-less-content .m-show-more").click(function(){
+    $(this).parent().addClass("m-display-more");
+  });
+  $(".m-more-less-content .m-show-less").click(function(){
+    $(this).parent().removeClass("m-display-more");
+  });
+  $(".m-more-less-content").each(function (i, e){
+    var html = $(e).html();
+    console.log(html);
+    var contentArray = html.split("<more>");
+    console.log(contentArray);
+    if (contentArray.length == 2) {
+      html = contentArray[0] + '<span class="m-show-more"></span><span class="m-more-text">' + contentArray[1] + '</span><span class="m-show-less"></span>';
+      console.log(html);
+      $(e).html(html); 
+      $(e).find(".m-show-more").click(function(){
+        $(this).parent().addClass("m-display-more");
+      });
+      $(e).find(".m-show-less").click(function(){
+        $(this).parent().removeClass("m-display-more");
+      });
+    }
+  });
+  });
 </script>
 </body>
 </html>
