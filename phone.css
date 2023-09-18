@@ -162,14 +162,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: auto;
     width: 100vw;
     border-radius: 0px;
     overflow: hidden;
 }
 .options_banner .banner_image img
 {
-    height: 100%;
+    width: 100%;
 }
 .option_container
 {
@@ -181,7 +181,7 @@
     height: auto;
     width: auto;
     max-width: 95vw;
-    bottom: -350px;
+    bottom: -700px;
     background: #ffffff;
     box-shadow: 0 5px 30px 0 #00000073;
     border-radius: 20px;
@@ -195,7 +195,7 @@
     flex-direction: column;
     height: auto;
     width: auto;
-    max-width: 130px;
+    max-width: 90px;
     margin: 15px;
     padding: 0px;
     background: #fff;
@@ -242,7 +242,7 @@
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
-    margin-top: 450px;
+    margin-top: 750px;
     margin-left: 10px;
     margin-right: 10px;
     width: 95%;
@@ -441,9 +441,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100vw;
     height: auto;
-    top: 110px;
+    top: 85px;
     margin: 30px 0;
     padding: 10px;
     z-index: 100;
@@ -457,6 +458,7 @@
     justify-content: center;
     align-items: center;
     color: #1452b5;
+    margin: 5px 0;
     font-size: 1rem;
     font-weight: 400;
     font-family: Roboto,sans-serif;
@@ -495,6 +497,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
+
 }
 .help_center .heading p
 {
@@ -503,7 +507,7 @@
     justify-content: center;
     align-items: center;
     color: #1452b5;
-    font-size: 30px;
+    font-size: 24px;
     margin: 20px 0;
     font-weight: 400;
 }
@@ -512,7 +516,7 @@
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     flex-wrap: wrap;
     margin: 20px 0;
     width: 100%;
@@ -526,7 +530,7 @@
     align-items: center;
     flex-direction: column;
     transition: 0.5s;
-    margin: 0 25px;
+    margin: 10px 5px;
     cursor: pointer;
 }
 .help_center .option:hover
@@ -540,7 +544,7 @@
     justify-content: center;
     align-items: center;
     width: auto;
-    max-width: 100px;
+    max-width: 80px;
 }
 .help_center .option .image img
 {
@@ -548,9 +552,10 @@
 }
 .help_center .option .option_title
 {
-    margin: 20px 0;
-    max-width: 160px;
+    margin: 10px 0;
+    max-width: 110px;
     text-align: center;
+
 }
 .help_center .hr-grey
 {
@@ -558,13 +563,13 @@
     height: 1px;
     background: #00000023;
     border: 0;
-    width: 30%;
+    width: 70%;
     margin-bottom: 30px;
 }
 .help_center .option_title
 {
     color: #505050;
-    font-size: 18px;
+    font-size: 16px;
 }
 .help_center .option:hover .option_title
 {
@@ -596,6 +601,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     width: 100vw;
 }
 .register_section .image_section
@@ -604,7 +610,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 .register_section .image_section .image
@@ -614,7 +620,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 10px 30px;
+    padding: 10px 0px;
     margin: 30px;
     background: #fff;
     border-radius: 15px;
@@ -629,7 +635,7 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    font-size: 30px;
+    font-size: 24px;
     color: #fff;
     flex-direction: column;
 }
@@ -639,7 +645,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
 }
 .register_section .main_section .heading .hr-grey
 {
@@ -694,18 +700,30 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    flex-direction: row;
+    flex-direction: column;
+    width: 100%;
 }
 .register_section .main_section ul li button
 {
-    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 5px;
     background-color: #1fbfd1;
     color: #000;
+    width: 100%;
     border: 0;
     font-size: 1rem;
     font-weight: 400;
-    margin: 0 10px;
-    border-radius: 20px;
+    margin: 20px 0px;
+    border-radius: 50px;
+}
+.register_section .main_section ul li button p
+{
+    width: 100%;
+    margin: 5px 0;
+    max-width: 150px;
 }
 .register_section .main_section .options .title a
 {
@@ -713,10 +731,15 @@
     text-decoration: none;
     margin-left: 4px;
 }
+.register_section .main_section ul li
+{
+    width: 100%;
+}
 .register_section .main_section ul li .btn_container.dark_blue button 
 {
     background-color: #1452b5;
     color: #fff;
+    width: 100%;
 }
 .news_section
 {
@@ -730,10 +753,10 @@
 }
 .heading
 {
-    font-size: 30px;
+    font-size: 24px;
     color: #1452b5;
     font-weight: 400;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .hr_section
 {
@@ -748,16 +771,18 @@
     position: relative;
     background: #00000058;
     border: 0;
-    width: 50%;
+    width: 70%;
     height: 1px;
     margin: 20px 0;
+    
 }
 .part_container
 {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    flex-direction: column;
     width: 95%;
     max-width: 1400px;
     height: auto;   
@@ -769,8 +794,8 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 50%;
-    margin: 50px 0;
+    width: 100%;
+    margin: 20px 0;
 }
 .part_container .part1 .image
 {
@@ -779,7 +804,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 80%;
+    width: 90%;
 }
 .part_container .part1 .image img
 {
@@ -793,8 +818,8 @@
     align-items: start;
     flex-direction: column;
     height: auto;
-    width: 50%;
-    margin: 50px 0;
+    width: 95%;
+    margin: 10px 0;
 }
 .part_container .part2 h3
 {
@@ -904,13 +929,15 @@
 }
 .team_section .select_section .option.Healthcare
 {
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     border-right: 2px solid #00000030;
+    text-align: center;
+
 }
 .team_section .select_section .option.Administrators
 {
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 .team_section .select_section .option.active
@@ -938,6 +965,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 .team_section .people .image
 {
@@ -946,7 +974,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 130px;
+    max-width: 90px;
 }
 .team_section .people .image img
 {
@@ -955,15 +983,17 @@
 .team_section .people .title
 {
     position: relative;
-    max-width: 140px;
+    width: 100%;
+    max-width: 120px;
     text-align: center;
     margin: 10px;
+    margin-bottom: 40px;
 }
 .team_section .people_section
 {
     position: relative;
-    columns: 4;
-    column-gap: 110px;
+    columns: 2;
+    column-gap: 10px;
 }
 .testimonials_section
 {
@@ -982,14 +1012,15 @@
     align-items: center;
     flex-direction: column;
     width: 95%;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 .testimonials .testimonial
 {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     margin: 30px 0;
     max-width: 1200px;
@@ -1001,7 +1032,8 @@
     justify-content: center;
     align-items: center;
     width: auto;
-    max-width: 130px; 
+    max-width: 130px;
+    margin: 20px 0; 
 }
 .testimonials .testimonial .image
 {
@@ -1014,7 +1046,8 @@
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    text-align: center;
 }
 .testimonials .testimonial .text_area .para 
 {
@@ -1038,8 +1071,12 @@
     margin-left: 10px;
     cursor: pointer;
 }
-.testimonials .testimonial .text_area .date
+.testimonials .testimonial .date
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: #505050;
     font-size: 18px;
     font-weight: 400;
@@ -1055,7 +1092,7 @@
 {
     border: 0;
     height: 1px;
-    width: 30%;
+    width: 70%;
 }
 .feedback_section
 {
@@ -1245,6 +1282,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 95%;
     max-width: 1100px;
     margin: 50px 0;
@@ -1255,8 +1293,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    margin-right: 10px;
+    width: 90%;
+    margin: 15px 0;
 }
 .participation_section .section_container .image_contain .image
 {
@@ -1277,7 +1315,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 70%;
+    text-align: center;
+    width: 95%;
     margin-left: 10px;
     color: #505050;
     font-size: 18px;
@@ -1324,7 +1363,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 230px;
+    width: 100%;
     margin: 10px;
 }
 .self-help_section .resources .resource .image
@@ -1333,7 +1372,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -1346,9 +1385,12 @@
     font-size: 20px;
     font-weight: 400;
     color: #1452b5;
+    margin-top: 10px;
 }
 .self-help_section .resources .resource .para
 {
+    width: 95%;
+    text-align: center;
     font-size: 15px;
     color: #505050;
 }
@@ -1367,6 +1409,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     max-width: 1300px;
     margin: 20px 0;
@@ -1381,16 +1424,16 @@
 }
 .add_download_section .parts .part.i1
 {
-    width: 20%;
+    width: 100%;
 }
 .add_download_section .parts .part.i2
 {
     justify-content: start;
-    width: 50%;
+    width: 95%;
 }
 .add_download_section .parts .part.i3
 {
-    width: 30%;
+    width: 100%;
 }
 .add_download_section .parts .part.i1 .image
 {
@@ -1398,7 +1441,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 50%;
 }
 .add_download_section .parts .part.i1 .image img
 {
@@ -1410,12 +1453,17 @@
     font-weight: 400;
     margin-bottom: 10px;
     color: #fff;   
+    text-align: center;
 }
 .add_download_section .parts .part.i2 .para .bold
 {
     font-weight: 400;
     font-size: 24px;
     color: #fff;
+}
+.add_download_section .parts .part.i2 .para
+{
+    text-align: center;
 }
 .add_download_section .parts .part.i3 button
 {
@@ -1440,6 +1488,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
     padding: 30px 0;
 }
 .banner_section .image
@@ -1448,7 +1497,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 90%;
+    margin: 10px 0;
 }
 .banner_section .image img
 {
@@ -1482,6 +1532,8 @@
     font-weight: 400;
     font-size: 1rem;
     color: #fff;
+    width: 95%;
+    text-align: center;
 }
 .footer .links_section .links
 {
@@ -1491,6 +1543,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 10px 0;
+    width: 95%;
 }
 .footer .links_section .links .link
 {
@@ -1529,7 +1582,35 @@
     color: #fff;
     padding: 10px 0;   
 }
-
+.consultation_btn
+{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #1fbfd1;
+}
+.consultation_btn .icon
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin: 10px;
+}
+.consultation_btn .icon img
+{
+    width: 100%;
+}
+.consultation_btn .para p
+{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
 
 
 
@@ -1685,22 +1766,20 @@
     margin-top:20px;
 }
 .owl-controls .owl-buttons .owl-prev{
-    background: #fff;
+    background: #ffffff00;
     position: absolute;
     top: 35%;
-    left: -60px;
+    left: 0px;
     padding: 0 18px 0 15px;
     border-radius: 50px;
-    box-shadow: 3px 14px 25px -10px #92b4d0;
 }
 .owl-controls .owl-buttons .owl-next{
-    background: #fff;
+    background: #ffffff00;
     position: absolute;
     top: 35%;
-    right: -60px;
+    right: 0px;
     padding: 0 15px 0 18px;
     border-radius: 50px;
-    box-shadow: -3px 14px 25px -10px #92b4d0;
 }
 .owl-controls .owl-buttons .owl-prev:after,
 .owl-controls .owl-buttons .owl-next:after{
