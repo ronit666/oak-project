@@ -1536,6 +1536,35 @@
 
 
 
+.consultation_btn
+{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #1fbfd1;
+}
+.consultation_btn .icon
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    margin: 10px;
+}
+.consultation_btn .icon img
+{
+    width: 100%;
+}
+.consultation_btn .para p
+{
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
 
 .container-fluid
 {
