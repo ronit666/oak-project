@@ -162,13 +162,15 @@
         <p class="rating_title">Oakleigh Road Clinic 🏆</p>
         <hr class="hr-grey">
         <p class="rating_title_span">CQC overall rating</p>
+        <div class="rating_btn_container">
         <button class="rating_btn">Good</button>
-        <a href="#" class="rating_link">See report</a>
+        <a href="#" class="rating_link">See report >></a>
+        </div>
     </div>
     <div class="options">
         <div class="option">FAQs (How do I...)</div>
-        <div class="option">Online consultation</div>
-        <div class="option">Contact the surgery</div>
+        <div class="option"><div class="image"><img src="images/online_consulation_big.svg"></div>Online consultation</div>
+        <div class="option Contact"><div class="image"><img src="images/two_3images-removebg-preview.png"></div>Contact the surgery</div>
     </div>
 </div>
 <div class="sub_nav">
@@ -298,7 +300,7 @@
                 <img src="images/ORC_Social_Prescriber.png">
             </div>
         </div>
-        <div class="part2">
+        <div class="part2 less active">
             <h3>Barnet Social Prescribing Self Referral</h3>
             <p class="discrip">Gets you to the right support you need within Barnet: </p>
             <p>- <a href="https://www.elementalsoftware.site/barnet/self-refer" target="_blank"
@@ -315,9 +317,20 @@
                     aria-label="Bereavement Support (opens in a new tab)">Bereavement Support</a></p>
             <p>"Enables you to better yourself to improve your quality of life"</p>
             <a
-                class="react-read-more-read-less react-read-more-read-less-more read-more" style="white-space:nowrap;cursor:pointer"
+                class="read-more"
                 aria-label="Read more">Read more</a>
-        </div>        
+        </div>       
+        <div class="part2 more">
+            <h3>Barnet Social Prescribing Self Referral</h3>
+            <p class="discrip bold">Barnet Social Prescribing Self Referral Update: </p>
+
+            <p class="discrip">We are excited to announce that we are offering a patient self referral route to speak to one of the surgeries social prescribers. Social Prescribers are non-medical professionals who are trained to listen and offer short term support to adults (18+) to help them focus on what matters most to them right now and connect them to appropriate local community organisations or groups for further follow up. </p>
+
+            <a
+                class="read-more read-less"
+                aria-label="Read more">Read less</a>
+
+        </div> 
     </div>
 </div>
 <div class="services_section" id="Services">
@@ -1320,6 +1333,30 @@ $(".option.Administrators").click(function(){
   $(".option.Healthcare").removeClass("active");
   $(".option.Administrators").addClass("active");
 });
+
+
+
+///////////////////////////////////////////////////
+
+
+
+
+
+
+$(".part2 .read-more").click(function(){
+  $(".part2.more").addClass("active");
+  $(".part2.less").removeClass("active");
+});
+
+$(".part2 .read-less").click(function(){
+  $(".part2.more").removeClass("active");
+  $(".part2.less").addClass("active");
+});
+
+
+
+
+
 </script>
 
 <script>
