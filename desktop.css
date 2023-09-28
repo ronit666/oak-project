@@ -805,7 +805,56 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    max-width: 1400px;
     height: auto;
+}
+.news_section .more_container
+{
+    display: none;
+}
+.news_section .more_container.active
+{
+    display: block;
+}
+.news_section .more_container_read_more
+{
+    display: none;
+}
+.news_section .more_container_read_more.active
+{
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1452b5;
+    background: #00000000;
+    border: 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.news_section .more_container_read_more:hover
+{
+    color: #1fbfd1;
+}
+.news_section .more_container_read_less
+{
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1452b5;
+    background: #00000000;
+    border: 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.news_section .more_container_read_less:hover
+{
+    color: #1fbfd1;
 }
 .heading
 {
@@ -834,12 +883,33 @@ body::-webkit-scrollbar
 .part_container
 {
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
-    align-items: start;
+    align-items: start; 
     width: 100%;
-    max-width: 1400px;
-    height: auto;   
+    max-width: 1200px;
+    height: auto;
+}
+.part_container.even .part1
+{
+    grid-column: 1;
+}
+.part_container.even .part2
+{
+    grid-column: 2;
+    padding-left: 10px;
+}
+.part_container.odd .part1
+{
+    grid-column: 2;
+    grid-row: 1;
+}
+.part_container.odd .part2
+{
+    grid-column: 1;
+    grid-row: 1;
 }
 .part_container .part1
 {
@@ -848,7 +918,7 @@ body::-webkit-scrollbar
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 50%;
+    width: 100%;
     margin: 50px 0;
 }
 .part_container .part1 .image
@@ -858,7 +928,7 @@ body::-webkit-scrollbar
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 80%;
+    width: 100%;
 }
 .part_container .part1 .image img
 {
@@ -872,7 +942,7 @@ body::-webkit-scrollbar
     align-items: start;
     flex-direction: column;
     height: auto;
-    width: 50%;
+    width: 100%;
     margin: 50px 0;
 }
 .part_container .part2.active
@@ -892,6 +962,7 @@ body::-webkit-scrollbar
     color: #505050;
     font-weight: 400;
     margin: 10px 0;
+    max-width: 560px;
 }
 .part_container .part2 p.bold
 {
@@ -909,6 +980,200 @@ body::-webkit-scrollbar
     font-size: 1rem;
     font-weight: 400;
 }
+.quote_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1452b5;
+    width: 100vw;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+.quote_section .container_section
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 1300px;
+}
+.quote_section .container_section .quote em
+{
+    color: #fff;
+  font-size: 54px;
+}
+.quote_section .quote
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;  
+    margin: 30px 0; 
+    text-align: center;
+}
+.quote_section .image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+}
+.quote_section .image img
+{
+    width: 100%;
+}
+.quote_section .image.right
+{
+    margin-top: 120px;
+}
+
+
+
+.app_download_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 40px 0;
+}
+.container_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 1300px;
+}
+.app_download_section .image_section
+{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 45%;
+}
+.app_download_section .image_section .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-right: 30px;
+}
+
+.app_download_section .image_section .image .desktop
+{
+
+}
+.app_download_section .image_section .image .phone
+{
+    display: none;
+}
+.app_download_section .image_section .image img
+{
+    width: 100%;
+}
+.app_download_section .main_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 55%;
+}
+.app_download_section .main_section .title
+{
+    color: #1452b5;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.app_download_section .main_section .discrip
+{
+    font-size: 16px;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+    color: #505050;
+    width: 100%;
+    text-align: left;
+}
+.app_download_section .main_section .features
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+.app_download_section .main_section .features .feature
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45%;
+    margin-bottom: 30px;
+}
+.app_download_section .main_section .features .feature .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35px;
+}
+.app_download_section .main_section .features .feature .image img
+{
+    width: 100%;
+}
+
+.app_download_section .main_section .features .feature .text
+{
+    margin-left: 10px;
+    color: #505050;
+    font-size: 16px;
+}
+.app_download_section .main_section .app_download_banner
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.app_download_section .main_section .app_download_banner .image
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 35%;
+    margin-right: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.app_download_section .main_section .app_download_banner .image:hover
+{
+    transform: translateY(-10px);
+}
+.app_download_section .main_section .app_download_banner .image img
+{
+    width: 100%;
+}
+/* ///////////////////////////////////////////// */
 .services_section
 {
     position: relative;
@@ -917,7 +1182,6 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
-
 }
 .services_section .services_options
 {
@@ -927,7 +1191,7 @@ body::-webkit-scrollbar
     align-items: center;
     width: 100%;
     max-width: 1300px;
-    margin: 80px 0;
+    margin: 40px 0;
 }
 .services_section .services_options .option
 {
@@ -1151,7 +1415,9 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
+    max-width: 1300px;
     padding: 50px 0;
+    margin-bottom: 50px;
 }
 .feedback_section .sections
 {
@@ -1180,6 +1446,86 @@ body::-webkit-scrollbar
     width: 50%;
 }
 .feedback_section .sections .section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.section .three_section
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 33%;
+    margin-left: 20px;
+}
+.section .three_section .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; 
+}
+.section .three_section .image img
+{
+    width: 100%;
+}
+.section .three_section .title
+{
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    color: #1452b5;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.section .three_section .title.action
+{
+    color: #212529;
+    padding-left: 10px;
+}
+.section .three_section .listLI
+{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+.section .three_section .listLI.circle::after
+{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: #1452b5;
+}
+.section .three_section .listLI.dash::after
+{
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    height: 1px;
+    width: 20px;
+    border-radius: 0px;
+    background: #1452b5;
+}
+.section .three_section.border
+{
+    border-left: 2px solid #0066ff;
+}
+.section .three_section.border .listLI
+{
+    padding-left: 10px;
+}
+/* .feedback_section .sections .section
 {
     position: relative;
     display: flex;
@@ -1286,6 +1632,7 @@ body::-webkit-scrollbar
     font-weight: 400;
     margin: 30px 0;
 }
+*/
 .feedback_section .images
 {
     position: relative;
@@ -1294,7 +1641,7 @@ body::-webkit-scrollbar
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
     margin: 50px 0;
 }
 .feedback_section .images .image
@@ -1311,7 +1658,11 @@ body::-webkit-scrollbar
 .feedback_section .images .image img
 {
     width: 100%;
-}
+} 
+
+
+
+/* ///////////////////////////////////////////// */
 .participation_section
 {
     position: relative;
@@ -1409,6 +1760,12 @@ body::-webkit-scrollbar
     flex-direction: column;
     width: 270px;
     margin: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.self-help_section .resources .resource:hover
+{
+    transform: translateY(-10px);
 }
 .self-help_section .resources .resource .image
 {
@@ -1715,7 +2072,6 @@ body::-webkit-scrollbar
 }
 .post-slide .post-img{
     position: relative;
-    overflow: hidden;
     border-radius: 10px;
 }
 .post-slide .post-img img{
@@ -1782,6 +2138,13 @@ body::-webkit-scrollbar
     background: #3498db;
     text-decoration:none;
     color:#fff;
+}
+
+.owl-carousel .owl-wrapper-outer
+{
+
+    overflow: hidden;
+    padding: 20px 0;
 }
 .owl-controls .owl-buttons{
     text-align:center;

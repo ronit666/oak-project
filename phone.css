@@ -108,7 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 5px;
+    margin: 0px;
     padding: 10px;
     background: #ffc;
     border: 0;
@@ -180,8 +180,8 @@
     flex-wrap: wrap;
     height: auto;
     width: auto;
-    max-width: 95vw;
-    bottom: -700px;
+    max-width: 100vw;
+    bottom: -720px;
     background: #ffffff;
     box-shadow: 0 5px 30px 0 #00000073;
     border-radius: 20px;
@@ -195,7 +195,7 @@
     flex-direction: column;
     height: auto;
     width: auto;
-    max-width: 90px;
+    max-width: 45%;
     margin: 15px;
     padding: 0px;
     background: #fff;
@@ -209,7 +209,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;  
+    width: 70%;  
 }
 .option_container .option_box .option_image img
 {
@@ -299,10 +299,12 @@
     justify-content: start;
     align-items: center;
     width: auto;
-    background: #e2e2e2;
+    background: #e2e2e200;
     padding: 10px;
     border-radius: 15px;
     margin: 10px;
+    margin-left: 0;
+    padding-left: 0;
 }
 .ad_container .image
 {
@@ -311,7 +313,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 .ad_container .image img
 {
@@ -334,12 +336,12 @@
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
     height: 250px;
-    background: #e2e2e2;
+    background: #f6f6f6;
     padding: 10px;
-    margin: 20px 0;
-    border-radius: 15px;
+    margin-top: 10px;
+    border-radius: 0px;
 }
 .timing_section .rating .image_container
 {
@@ -389,10 +391,12 @@
     border: 0;
     outline: none;
     padding: 5px 20px;
-    border-radius: 8px;
-    background-color: #00ff00;
-    color: #00000096;
-    font-weight: 500;
+    border-radius: 0px;
+    background-color: #036803;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
     margin-top: 20px;
     font-family: Roboto,sans-serif;
 }
@@ -413,9 +417,9 @@
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    width: 45%;
+    width: 100%;
     height: 250px;
-    margin: 20px 0px;
+    margin: 10px 0px;
     padding: 0;
 }
 .timing_section .option
@@ -426,7 +430,7 @@
     align-items: center;
     background: #1452b5;
     width: 100%;
-    max-width: 250px;
+    max-width: 350px;
     margin-bottom: 30px;
     padding: 10px 0;
     color: #fff;
@@ -435,6 +439,22 @@
     border-radius: 50px;
     font-family: Roboto,sans-serif;
 }
+.timing_section .option.Contact
+{
+    color: #1452b5;
+    background: #fff;
+    border: 2px solid #1452b5;
+}
+.timing_section .option .image
+{
+    width: 35px;
+    margin: 0 10px;
+}
+.timing_section .option .image img
+{
+    width: 100%;
+}
+/* ////////////////////////////////// */
 .sub_nav
 {
     position: sticky;
@@ -847,6 +867,251 @@
     font-size: 1rem;
     font-weight: 400;
 }
+.news_section .more_container
+{
+    display: none;
+}
+.news_section .more_container.active
+{
+    display: block;
+}
+.news_section .more_container_read_more
+{
+    display: none;
+}
+.news_section .more_container_read_more.active
+{
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1452b5;
+    background: #00000000;
+    border: 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.news_section .more_container_read_more:hover
+{
+    color: #1fbfd1;
+}
+.news_section .more_container_read_less
+{
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1452b5;
+    background: #00000000;
+    border: 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+.news_section .more_container_read_less:hover
+{
+    color: #1fbfd1;
+}
+
+.quote_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1452b5;
+    width: 100vw;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+.quote_section .container_section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+}
+.quote_section .container_section .quote em
+{
+    color: #fff;
+  font-size: 54px;
+}
+.quote_section .quote
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;  
+    margin: 0px 0; 
+    text-align: center;
+}
+.quote_section .image
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    margin: 0 15px;
+}
+.quote_section .image img
+{
+    width: 100%;
+    max-width: 100px;
+}
+.quote_section .image.right
+{
+    justify-content: end;
+    align-items: end;
+}
+/* ////////////////////////////////// */
+.app_download_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    background: #f6f6f6;
+    padding: 40px 0;
+}
+.app_download_section .container_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1300px;
+}
+.app_download_section .image_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.app_download_section .image_section .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-right: 30px 0;
+}
+.app_download_section .image_section .image img
+{
+    width: 100%;
+}
+.app_download_section .main_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+.app_download_section .main_section .title
+{
+    color: #1452b5;
+    font-size: 24px;
+    margin: 30px 0;
+    width: 100%;
+}
+.app_download_section .main_section .discrip
+{
+    font-size: 16px;
+    line-height: 1.2em;
+    margin-bottom: 8px;
+    color: #505050;
+    width: 100%;
+    text-align: left;
+}
+.app_download_section .main_section .features
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+.app_download_section .main_section .features .feature
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45%;
+    margin-bottom: 30px;
+}
+.app_download_section .main_section .features .feature .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 35px;
+}
+.app_download_section .main_section .features .feature .image img
+{
+    width: 100%;
+}
+.app_download_section .image_section .image .desktop
+{
+    display: none;
+}
+.app_download_section .image_section .image .phone
+{
+}
+.app_download_section .main_section .features .feature .text
+{
+    margin-left: 10px;
+    color: #505050;
+    font-size: 16px;
+}
+.app_download_section .main_section .app_download_banner
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.app_download_section .main_section .app_download_banner .image
+{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    margin-right: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.app_download_section .main_section .app_download_banner .image:hover
+{
+    transform: translateY(-10px);
+}
+.app_download_section .main_section .app_download_banner .image img
+{
+    width: 100%;
+}
+
+/* ////////////////////////////////// */
 .services_section
 {
     position: relative;
@@ -1017,13 +1282,15 @@
 .testimonials .testimonial
 {
     position: relative;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin: 30px 0;
+    margin: 10px 0;
     max-width: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 .testimonials .testimonial .image
 {
@@ -1031,9 +1298,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    max-width: 130px;
+    width: 100%;
     margin: 20px 0; 
+    grid-column: 1;
+    grid-row: 1;
 }
 .testimonials .testimonial .image
 {
@@ -1043,10 +1311,10 @@
 {
     position: relative;
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 .testimonials .testimonial .text_area .para 
@@ -1059,7 +1327,8 @@
 }
 .testimonials .testimonial.odd .text_area .para 
 {
-    text-align: right;
+    width: 95%;
+    text-align: center;
 }
 .testimonials .testimonial .text_area .para button
 {
@@ -1094,6 +1363,7 @@
     height: 1px;
     width: 70%;
 }
+/* ///////////////////////////////////////////// */
 .feedback_section
 {
     position: relative;
@@ -1257,7 +1527,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0px;
     overflow: hidden;
     margin: 20px;
 }
@@ -1265,6 +1535,116 @@
 {
     width: 100%;
 }
+.section .three_section.phone_hide
+{
+    display: none;
+}
+.section.phone_colume
+{
+    flex-direction: column;
+}
+.section .three_section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+}
+.section.phone_colume .three_section
+{
+    width: 80%;
+}
+.section .three_section .image
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px; 
+}
+.section .three_section .image img
+{
+    width: 100%;
+}
+.section .three_section .title
+{
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    color: #1452b5;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.section .three_section .title.action
+{
+    color: #212529;
+    padding-left: 10px;
+}
+.section .three_section .listLI
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  width: 100%;
+  margin: 10px 0;
+}
+.section .three_section .listLI.desktop_date
+{
+    display: none;
+}
+.section .three_section .listLI.phone_date
+{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    width: 100%;
+}
+.section .three_section .listLI.phone_date em
+{
+    margin-right: 5px;
+}
+.section .three_section .listLI.circle::after
+{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 20px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: #1452b5;
+}
+.section .three_section .listLI.dash::after
+{
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 25px;
+    height: 1px;
+    width: 20px;
+    border-radius: 0px;
+    background: #1452b5;
+}
+.section .three_section.border
+{
+}
+.section .three_section.border .listLI
+{
+    padding-left: 10px;
+}
+
+/* //////////////////////////////////// */
 .participation_section
 {
     position: relative;
@@ -1372,8 +1752,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    border-radius: 15px;
+    width: 65%;
+    border-radius: 20px;
     overflow: hidden;
 }
 .self-help_section .resources .resource .images img
