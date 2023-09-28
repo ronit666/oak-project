@@ -1068,11 +1068,6 @@ body::-webkit-scrollbar
     width: 70%;
     margin-right: 30px;
 }
-
-.app_download_section .image_section .image .desktop
-{
-
-}
 .app_download_section .image_section .image .phone
 {
     display: none;
